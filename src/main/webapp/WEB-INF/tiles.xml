@@ -1,0 +1,104 @@
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	<definition name="afteradminlogin.definition"
+		template="/WEB-INF/jsp/layout_spec.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/afteradminheader.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	
+	
+	<definition name="HomePage" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | HomePage | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/index.jsp" />
+	</definition>
+	<definition name="Contact" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Contact | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/contact.jsp" />
+	</definition>
+
+	<definition name="About" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | About | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/about.jsp" />
+	</definition>
+	
+	<definition name="Acts" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Acts | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/act.jsp" />
+	</definition>
+	
+	<definition name="PCB" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | PCB | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/labour.jsp" />
+	</definition>
+	
+	<definition name="LegalMetrology" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | LegalMetrology | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/legalmetrology.jsp" />
+	</definition>
+	
+	<definition name="AccessDenied" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Access Denied | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/access-denied.jsp" />
+	</definition>
+	
+	<definition name="Industries" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Industries | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/industries.jsp" />
+	</definition>
+	
+	<definition name="Labour" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Labour | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/labour.jsp" />
+	</definition>
+	
+	<definition name="LoginPage" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | LoginPage | EoDB | CIS AP" />
+	<put-attribute name="body" value="/WEB-INF/pages/login.jsp" />
+	</definition>
+
+	<definition name="InspectorLogin" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | LoginPage | EoDB | CIS AP" />
+	<put-attribute name="body" value="/WEB-INF/pages/ins-login.jsp" />
+	</definition>
+	
+	<definition name="RegisterInspector" extends="base.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Register Admin | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/registerinspector.jsp" />
+	</definition>
+	
+	<definition name="AdminHome" extends="afteradminlogin.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Admin Home | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/adminhome.jsp" />
+	</definition>
+	
+	<definition name="AddDepartment" extends="afteradminlogin.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Add Department | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/add_dept.jsp" />
+	</definition>
+	
+	<definition name="AddInspector" extends="afteradminlogin.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Add Inspector | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/add_ins.jsp" />
+	</definition>
+	
+	<definition name="AddEstablishment" extends="afteradminlogin.definition">
+		<put-attribute name="title" value="Central Inspection System Arunachal Pradesh | Add Establishment | EoDB | CIS AP" />
+		<put-attribute name="body" value="/WEB-INF/pages/add_est.jsp" />
+	</definition>
+
+
+</tiles-definitions>
